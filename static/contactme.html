@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactme</title>
+    <link rel="stylesheet" href="/static/style.css">
+    
+    <script>
+        function validate(){
+            var val=document.forms["form"]["name"].value;
+            console.log(val)
+            if(val==""){
+                alert("please fill the field");
+                return false;
+            }
+        }
+        </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo-container">
+                    <img src="/Images/logo.jpg" alt="" class="logo">
+                    <div class="logo-text">ratham</div>
+                </div>
+                <div class="nav-items">
+                    <div><a href="/INDEX.HTML">Home</a></div>
+                    <div><a href="./project.html">Projects</a></div>
+                    <div><a href="./skills.html">Skills</a></div>
+                    <div><a href="./contactme.html">Contact-me</a></div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+             
+<!-- contact me section  -->
+<div class="contactus-form-container">
+    <div class="container">
+        <h1 class="contactus-heading">Contact-Us</h1>
+
+        <h3 class="contactus-sub-heading">Questions,trhoughts or just want to say hello</h3>
+
+        <div class="contactus-form-container2">
+                <div class="formfield-container">
+                    <form class="form" action="" onsubmit="return validate()">
+          
+                    <input class="formfield"                      
+                    type="text" 
+                     name="name" 
+                     id="name"
+                     required
+                     autocomplete="on"
+                    placeholder="Enter your Name">
+                    <input class="formfield" 
+                     type="email" 
+                     name="email" 
+                     id="email"
+                     required
+                     autocomplete="on"
+                    placeholder="Enter your Email">
+                    <input class="formfield"  
+                     type="text" 
+                     name="subject" 
+                     required
+                     id="subject"
+                     autocomplete="on"
+                    placeholder="Enter your Subject">
+                    <textarea name="message" id="message" 
+                    class="formfield formfield-textarea" 
+                    required
+                    cols="30" rows="10"
+                    autocomplete="on"
+                    placeholder="Enter your Message"
+                    ></textarea>
+                    <div id="error"></div>
+                    <button type="submit" class="btn-project btn-pink" id="submit-btn">
+                    submit</button>
+                </form>
+                </div>
+                
+           
+        </div>
+    </div>
+</div>
+
+
+
+        <footer>
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="footer-faded-text">Pratham</div>
+
+                    <div class="link-wrapper">
+                        <div><a href="/INDEX.HTML">Home</a></div>
+                        <div><a href="./project.html">Projects</a></div>
+                        <div><a href="./skills.html">Skills</a></div>
+                        <div><a href="./contactme.html">Contact-me</a></div>
+    
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
